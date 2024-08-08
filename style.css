@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: darkslategray;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.profile {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.profile button {
+    background-color: red;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 10px;
+}
+
+.profile p {
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+main {
+    padding: 28px 16px;
+    display: flex;
+}
+
+.clear {
+    padding-top: 12px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.clear button {
+    background-color: transparent;
+    border: 1px solid rgb(197, 193, 193);
+    padding: 10px 16px;
+    border-radius: 5px;
+    color: red;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    padding-top: 16px;
+}
+
+.container div:first-child {
+    border: 5px solid green;
+}
+
+.container div {
+    padding: 10px;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+div h2 {
+    font-size: 18px;
+}
+
+div p {
+    font-size: 14px;
+    padding-top: 8px;
+}
+
+.next {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 16px;
+}
+
+.next button {
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 5px;
+    /* margin-top: 16px; */
+}
+
+.mobile-nav {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: cadetblue;
+    padding: 16px 8px;
+}
+
+.mobile-nav ul {
+    display: flex;
+    gap: 16px;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 4px;
+}
+
+a img {
+    width: 16px;
+    height: 16px;
+}
+
+.tab-nav {
+    display: none;
+}
+
+.tab-nav a {
+    color: black;
+}
+
+.all {
+    width: 100%;
+    border: 1px solid black;
+}
+
+.link-text {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .mobile-nav {
+        display: none;
+    }
+
+    .tab-nav {
+        display: flex;
+        border: 1px solid red;
+    }
+
+    .tab-nav ul li {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .link-text {
+        display: flex;
+    }
+}
