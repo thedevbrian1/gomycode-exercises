@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+}
+
+.hamburger {
+    width: 28px;
+    height: 28px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1592478457432-38ed2af3ee03?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    color: white;
+}
+
+.hero div {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(168, 32, 240, 0.4);
+}
+
+.hero h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    border: 1px solid white;
+    padding: 20px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.container {
+    margin-top: 80px;
+    padding: 20px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.container img {
+    width: 100%;
+}
+
+.container h2 {
+    margin-top: 20px;
+    padding: 0 8px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container p {
+    margin-top: 10px;
+    padding: 0 8px;
+    text-align: center;
+}
+
+.creation {
+    color: white;
+    height: 120px;
+    position: relative;
+}
+
+.creation h3 {
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    text-transform: uppercase;
+}
+
+#deep-earth {
+    background-image: url('https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
